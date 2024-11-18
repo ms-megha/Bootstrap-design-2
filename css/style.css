@@ -1,0 +1,113 @@
+:root {
+    --light-orange: #d46c4f;
+    --nav-text: #617784;
+    --deep-orange: #f4670c;
+    --deep-grey: #565658;
+    --light-grey: #7f7f81;
+    --grey: #4b4746;
+    --light-background: #f8f8f8;
+    --blue: #192847;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+  }
+  header{
+    background-color: rgb(226, 198, 203);
+  }
+  .logo{
+    color:rgba(209, 42, 50, 0.712) ;
+  }
+  .logo-text p{
+    margin-bottom: 0px;
+    font-size: 18px;
+    color:rgba(209, 42, 50, 0.712) ;
+  }
+  nav ul a {
+    text-decoration: none;
+    color: black;
+  }
+  nav ul li{
+    list-style: none;
+  }
+  .social-media{
+    color: rgba(209, 42, 50, 0.712);
+  }
+  section{
+    margin-bottom: 10px;
+  }
+  .hero{
+    position: relative;
+  }
+.hero::before{
+  content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(53, 52, 45);
+    opacity: 0.6;
+}
+.hero-text{
+font-size: 16px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+z-index: 2;
+}
+.booking{
+  background-color: white;
+  color: black;
+}
+.booking:hover{
+  background-color: black;
+  color: white;
+}
+.below-about{
+  background-color: rgb(226, 198, 203);
+}
+.service-box h3{
+  padding: 10px 0px 10px 0px;
+}
+.service-box img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+button{
+  margin-bottom: 8px;
+}
+footer{
+  background-color: rgb(226, 198, 203);
+
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+  .hero-text{
+    font-size: 12px;
+  }
+  .hero-text h1{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width:320px) and (max-width:575px) {
+  .hero{
+    height: 250px;
+  }
+  .hero img{
+    height: 100%;
+  }
+  .hero-text{
+    font-size: 12px;
+  }
+  .hero-text h1{
+    font-size: 16px;
+  }
+  
+}
